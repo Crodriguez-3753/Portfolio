@@ -95,7 +95,7 @@ main {
     flex-wrap: wrap;
     align-items:flex;
     justify-content: space-between;
-    font-size: vw;
+    font-size: 1.5vw;
 }
 
 .About-me > h2 {
@@ -131,7 +131,7 @@ main {
     background-size: 150%;
     transition: all 0.5s;
 }
-
+/* features for portfolio */
 .Project:hover {
     background-color: var(--fourth);
 }
@@ -172,7 +172,7 @@ main {
     background-size: 100% 88%;
     color: var(--secondary);
 }
-
+/* portfolio images */
 #Project-1 {
     background-image: url(https://www.njea.org/wp-content/uploads/2014/10/Coding.jpg);
 }
@@ -188,7 +188,7 @@ main {
 #Project-4 {
     background-image: url(https://s27389.pcdn.co/wp-content/uploads/2017/04/AdobeStock_112185177-3-1024x683.jpeg);
 }
-
+/* end of portfolio images */
 @media screen and (max-width: 980px) {
     header {
       padding: 0 0 10px 0;
