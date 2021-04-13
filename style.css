@@ -95,16 +95,16 @@ main {
     flex-wrap: wrap;
     align-items:flex;
     justify-content: space-between;
-    font-size: 1.5vw;
+    font-size: vw;
 }
 
 .About-me > h2 {
     flex: 0 0 20%;
-  text-align: right;
-  padding-right: 10px;
-  border-right: 8px solid var(--primary);
-  font-size: 6vw;
-  line-height: 1.1;
+    text-align: right;
+    padding-right: 10px;
+    border-right: 8px solid var(--primary);
+    font-size: 6vw;
+    line-height: 1.1;
 }
 
 .About-me > div {
@@ -154,7 +154,7 @@ main {
 }
 
 .contact address a {
-    color: var(--tertiary);
+    color: var(--secondary);
     padding: 5px;
     text-decoration: none;
     font-size: 1.3rem;
@@ -187,4 +187,56 @@ main {
 
 #Project-4 {
     background-image: url(https://s27389.pcdn.co/wp-content/uploads/2017/04/AdobeStock_112185177-3-1024x683.jpeg);
+}
+
+@media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 7vw;
+    }
+    
+    header nav {
+    justify-content: center;
+    }
+    
+    .About-me > h2,
+    .About-me > div {
+      flex: 0 0 100%;
+      text-align: center;
+      justify-content: center;
+      font-size: 3vw;
+    }
+    
+    .contact > h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Project,
+    .Project:first-child {
+        flex-basis: 100%;
+    }
+
+    .Project:first-child {
+        min-height: 150px;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
